@@ -1,14 +1,20 @@
-body{
+*{
   margin: 0;
   padding: 0;
   font-family: "Roboto" sans-serif;
+
+}
+body{
+  background-color:whitesmoke;
+  display: flex;
+   
+    
+    
 }
 .list-items{
   background:#36454F;
   margin-top: 70px;
   padding-top: 30px;
-  position: fixed;
-  left: 0;
   width: 250px;
   height: 100%;
   transition: 0.5s;
@@ -32,11 +38,8 @@ body{
   padding-right: 10px;
 }
 label #sidebar_btn{
-  z-index: 1;
-  color: #36454F;
-  position: fixed;
+color: #36454F;
   cursor: pointer;
-  left: 300px;
   font-size: 20px;
   margin: 5px 0;
   transition: 0.5s;
@@ -57,22 +60,26 @@ label #sidebar_btn:hover{
   width: 80px;
 
 }
+
 .content{
-  margin-left: 250px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  grid-template-areas: 232px;
+  gap: 10px;
+  width: 80%;
+  margin: 10px;
+  }
+.content div{
+  padding: 1px;
+  text-align: center;
+}
+.von{
+  width: 232px;
+  height: 302px;
+}
+.flex{
   display: flex;
-  padding-left: 150px;
-  padding-top: 30px;
-  padding-right:150px;
-  width: 100%;
-      
+  justify-content: space-between;
 }
 
-.one{
-  grid-area: one;
-  height: 15px;
 
-}
-.two{
-  grid-area: two;
-  height: 15px;
-}
